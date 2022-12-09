@@ -106,20 +106,7 @@ namespace WindowsFormsApp1
            
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            var rowData = dataGridView1.Rows[e.RowIndex].Cells.Cast<DataGridViewCell>().
-            Select(cell => cell.Value).ToArray();
-            string job_info = String.Join(", ", rowData);
-            string job_id = job_info.Split(',')[0];
-            textBox5.Text = job_id;
-            textBox6.Text = job_info.Split(',')[1];
-            textBox7.Text = job_info.Split(',')[2];
-            textBox8.Text = job_info.Split(',')[3];
-           // MessageBox.Show("890");
-
-
-        }
+       
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -182,9 +169,21 @@ namespace WindowsFormsApp1
 
             // Close the connection
             con.Close();
-            textBox6.Text = searchResults.Rows[0]["job_title"].ToString();
-            textBox7.Text = searchResults.Rows[0]["min_salary"].ToString();
-            textBox8.Text = searchResults.Rows[0]["max_salary"].ToString();
+            if (searchResults.Rows.Count > 0)
+            {
+
+                textBox6.Text = searchResults.Rows[0]["job_title"].ToString();
+                textBox7.Text = searchResults.Rows[0]["min_salary"].ToString();
+                textBox8.Text = searchResults.Rows[0]["max_salary"].ToString();
+            }
+            else {
+                textBox5.Text = " ";
+                textBox6.Text = " ";
+                textBox7.Text = " ";
+                textBox8.Text = " ";
+                MessageBox.Show("no record!");
+            }
+           
 
         }
     }
