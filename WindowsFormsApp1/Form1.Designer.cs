@@ -32,6 +32,7 @@ namespace WindowsFormsApp1
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.job_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -54,15 +55,20 @@ namespace WindowsFormsApp1
             // 
             // linkLabel1
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel1.Location = new System.Drawing.Point(389, 177);
+            this.linkLabel1.Location = new System.Drawing.Point(0, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(77, 26);
-            this.linkLabel1.TabIndex = 4;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "create new job\r\n\r\n";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            this.linkLabel1.Size = new System.Drawing.Size(100, 23);
+            this.linkLabel1.TabIndex = 6;
+            // 
+            // job_btn
+            // 
+            this.job_btn.Location = new System.Drawing.Point(360, 143);
+            this.job_btn.Name = "job_btn";
+            this.job_btn.Size = new System.Drawing.Size(149, 80);
+            this.job_btn.TabIndex = 7;
+            this.job_btn.Text = "JOB MANAGEMENT";
+            this.job_btn.UseVisualStyleBackColor = true;
+            this.job_btn.Click += new System.EventHandler(this.job_btn_Click);
             // 
             // Form1
             // 
@@ -70,14 +76,13 @@ namespace WindowsFormsApp1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.job_btn);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Form1";
-          
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -86,5 +91,6 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Button job_btn;
     }
 }

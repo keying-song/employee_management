@@ -25,18 +25,19 @@ namespace WindowsFormsApp1
 
         }
 
-       
-
-        //using connection string attributes to connect to Oracle Database
-        
-       //  connection.Open();
-        // Console.WriteLine("Connected to Oracle" + con.ServerVersion);
-       //
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void job_btn_Click(object sender, EventArgs e)
         {
             CreateJobForm createJob = new CreateJobForm();
             createJob.Show();
-
         }
+
+
+
+        //using connection string attributes to connect to Oracle Database
+
+        //  connection.Open();
+        // Console.WriteLine("Connected to Oracle" + con.ServerVersion);
+        //
+
     }
 }
