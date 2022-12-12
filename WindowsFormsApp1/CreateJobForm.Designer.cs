@@ -153,7 +153,6 @@ namespace WindowsFormsApp1
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(442, 307);
             this.dataGridView1.TabIndex = 8;
-          
             // 
             // hRJOBSBindingSource
             // 

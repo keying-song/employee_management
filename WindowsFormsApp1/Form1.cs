@@ -31,6 +31,17 @@ namespace WindowsFormsApp1
             createJob.Show();
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            employeeHiring hiringPage = new employeeHiring();
+            hiringPage.Show();
+        }
+
 
 
         //using connection string attributes to connect to Oracle Database
