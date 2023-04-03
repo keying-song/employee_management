@@ -1,2 +1,2 @@
 # employee_management
-an wpf application using oracle stored procudure and functions as back end.
+an win form application using oracle stored procudure and functions as back end.
